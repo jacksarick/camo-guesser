@@ -1,7 +1,7 @@
 # patterns:
 
 {% for file in site.static_files %}
-  {% if file.path contains include.camo-pattern %}
+  {% if file.path contains include.camo-patterns %}
     {% assign filenameparts = file.path | split: "/" %}
     {% assign filename = filenameparts | last | replace: file.extname,"" %}
 
