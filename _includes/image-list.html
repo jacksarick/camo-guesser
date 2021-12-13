@@ -1,8 +1,8 @@
 <ul class ="image-list">
   {% for file in site.static_files %}
-  <li>{{ file }}</li>
+  <li>1 {{ file }}</li>
     {% if file.path contains include.folder %}
-      <li>file</li>
+      <li>2 {{ file }}</li>
     {% endif %}
   {% endfor %}
 </ul>
