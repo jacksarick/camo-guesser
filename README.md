@@ -1,3 +1,3 @@
-{% for camo in site.camo-patterns %}
-    camo
+{% for camo in site.camopatternss %}
+    {{ camo }}
 {% endfor %}
