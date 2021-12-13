@@ -1,9 +1,5 @@
 <ul class ="image-list">
-  {% for file in site.static_files %}
+  {% for file in includes.camopatterns %}
     <li>1 {{ file }}</li>
-    {% if file.path contains "camo-patterns" %}
-      {% assign filenameparts = file.path | split: "/" %}
-        <li>2 {{filenameparts }}</li>
-      {% endif %}
   {% endfor %}
 </ul>
