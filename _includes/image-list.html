@@ -1,5 +1,6 @@
-<ul class ="image-gallery">
+<ul class ="image-list">
   {% for file in site.static_files %}
+  <li>file</li>
     {% if file.path contains include.folder %}
       <li>file</li>
     {% endif %}
