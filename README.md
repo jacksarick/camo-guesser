@@ -1,3 +1,3 @@
 # patterns:
 
-{% include image-list.html %}
+{% include image-list.html folder="camo-patterns" %}
