@@ -4,4 +4,7 @@
 <ul>
 {% for pattern in site.camo-patterns %}
 	<li> {{ pattern }}</li>
+{% endfor %}
 </ul>
+
+v3
