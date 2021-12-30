@@ -3,8 +3,8 @@
 
 <ul>
 {% for pattern in site.camo-patterns %}
-	<li> {{ pattern }}</li>
+	<li> {{ pattern.path }} <img src="{{ pattern.path }}" width="500" height="500"> </li>
 {% endfor %}
 </ul>
 
-v3
+v3.1
