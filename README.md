@@ -1,10 +1,7 @@
 # patterns:
-{% assign camo-patterns = site.static_files | where: "image", true %}
-
-<ul>
-{% for pattern in site.camo-patterns %}
-	<li> {{ pattern.path }} <img src="{{ pattern.path }}" width="500" height="500"> </li>
+{% assign camo-patterns = site.static_files %}
+{% for patten in camo-patterns %}
+	* [{{ pattern.path }}]({{ site.baseurl }}{{ pattern.path }}) <img src="{{ site.baseurl }}{{ pattern.path }}" width="500" height="500">
 {% endfor %}
-</ul>
 
-v3.1
+v3.2
