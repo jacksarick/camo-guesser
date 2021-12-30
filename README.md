@@ -1,3 +1,7 @@
 # patterns:
+{% assign camo-patterns = site.static_files | where: "image", true %}
 
-{% include image-list.html folder="camo-patterns" %}
+<ul>
+{% for pattern in site.camo-patterns %}
+	<li> {{ pattern }}</li>
+</ul>

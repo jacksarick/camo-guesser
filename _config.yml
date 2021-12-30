@@ -1,2 +1,5 @@
-collections:
-  - camo-patterns
+defaults:
+  - scope:
+      path: "assets/camo-patterns"
+    values:
+      image: true
